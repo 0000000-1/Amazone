@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>amazone.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            scroll-behavior: hidden;
+            /* scroll-behavior: none; */
+            height: 100vh;
+            background-color: rgb(238, 237, 237);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --white-color: white;
+        }
+
+        header {
+            height: 18vh;
+        }
+
+        header .nav {
+            position: sticky;
+            background-color: #131921;
+            display: flex;
+            color: #fff;
+            text-align: center;
+            align-items: center;
+            padding: 0px;
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+
+        .box1 span {
+            transform: rotate(90deg);
+        }
+
+        .box11 img {
+            margin: 0%;
+            padding: 0%;
+            height: 60px;
+            width: 120px;
+        }
+
+        .box12 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 2px;
+            padding-top: 0px;
+            height: 8vh;
+            width: 300px;
+        }
+
+        .box12 span {
+            font-size: 10px;
+        }
+
+        .box12 span>p {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .box13 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 3px;
+            height: 40px;
+            width: 350px;
+        }
+
+        .box13 select {
+            height: 40px;
+            width: 40px;
+        }
+
+        .box13 input {
+            border-style: none;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        .box13 i {
+            font-size: 18px;
+            color: #131921;
+            background-color: #d5b47e;
+            padding: 10px 12px 12px 10px;
+            border-radius: 0px 3px 3px 0px;
+        }
+
+        .box14 {
+            font-weight: bold;
+            display: flex;
+            gap: 3px;
+        }
+
+        .box14 img {
+            height: 24px;
+            width: 24px;
+        }
+
+        .box15 {
+            font-size: 14px;
+            font-weight: bold;
+            width: 140px;
+        }
+
+        .box17 {
+            padding: 0px 10px 0px 0px;
+        }
+
+        header .nav2 {
+            background-color: #232f3e;
+            display: flex;
+            color: #fff;
+            text-align: center;
+            align-items: center;
+            font-size: 14px;
+            padding: 6px 15px;
+            justify-content: space-between;
+        }
+
+        .nav2 .minilink {
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .box1 {
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .applink {
+            font-size: 18px;
+        }
+
+        .box7 a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            margin: 0%;
+            padding: 0%;
+            height: 30px;
+            width: 30px;
+        }
+
+        /* big_banner */
+
+        .big_banner {
+            position: relative;
+            top: -10px;
+            height: 400px;
+            z-index: -1;
+            width: 100%;
+        }
+
+        /* section one */
+
+        #multibox {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            top: -60px;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-content: center;
+
+        }
+
+        .minibox {
+            padding: 20px 0px 15px 0px;
+            height: 420px;
+            width: 307px;
+            background-color: #fff;
+            display: flex;
+            position: relative;
+            justify-content: start;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .minibox h1 {
+            font-size: 22px;
+            padding: 0px 20px 5px 20px;
+        }
+
+        .minibox img {
+            padding: 10px 10px 0px 20px;
+            height: 102px;
+            width: 144px;
+        }
+
+        .minibox p {
+            padding: 0px 0px 10px 20px;
+            font-size: 10px;
+        }
+
+        .minibox_a {
+            padding: 20px 0px 0px 20px;
+            font-size: 12px;
+            color: rgb(27, 215, 248);
+            text-decoration: none;
+        }
+
+        /* rowbox_row */
+        #rowbox {
+            position: relative;
+            z-index: 1;
+            flex-direction: row;
+            display: flex;
+            margin: 45px 0px 0px 0px;
+            justify-content: center;
+        }
+
+        .rowbox_row {
+            margin: 15px;
+            height: 230px;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .rowbox_row h1 {
+            padding: 10px 0px 0px 20px;
+        }
+
+        .rowrow {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .rowbox_row img {
+            gap: 10px;
+            height: 150px;
+            width: 130px;
+        }
+
+        /* register */
+        #register {
+            background-color: #fff;
+            margin: 15px 0px;
+            bottom: -130px;
+            padding: 40px 0px;
+
+        }
+
+        .content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid rgb(231, 226, 226);
+            padding: 20px;
+            gap: 6px;
+        }
+
+        .content .btn {
+            border-radius: 5px;
+            border: 2px solid goldenrod;
+            height: 40px;
+            width: 300px;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 2px 0px;
+            background: linear-gradient(#ffd876, #ffc530);
+        }
+
+        /* footer1 */
+        .para {
+            padding: 10px;
+            text-align: center;
+            background-color: #37475a;
+        }
+
+        .para a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .para1 {
+            background-color: #232f3e;
+        }
+
+        .para1_link {
+            padding: 40px 0px;
+            justify-content: space-around;
+            color: #fff;
+            display: flex;
+
+        }
+
+        .para1_link ul li {
+            padding: 5px;
+        }
+
+        .para2 {
+            padding: 20px;
+            border-style: none;
+            justify-items: center;
+            justify-content: center;
+            background-color: #232f3e;
+        }
+
+        .para2 img {
+            height: 60px;
+            width: 120px;
+        }
+
+        .para2 .country {
+            justify-content: center;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .para_content {
+            gap: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .para_content select {
+            height: 40px;
+            width: 150px;
+            color: #fff;
+            background-color: #232f3e;
+        }
+
+        .country p {
+            color: var(--white-color);
+        }
+
+        #footer2 {
+            color: #fff;
+            background-color: #131a22;
+        }
+
+        .links {
+            padding: 10px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .link12 {
+            display: flex;
+            gap: 15px;
+            width: 100vw;
+            align-items: center;
+            flex-direction: column;
+            margin: 25px 0 0 0;
+        }
+
+        .link1 {
+            justify-content: flex-start;
+            display: flex;
+        }
+
+        .link2 {
+            justify-content: flex-start;
+            display: flex;
+        }
+
+        .link1 ul {
+            width: 200px;
+        }
+
+        .link2 ul {
+            width: 200px;
+        }
+
+        .links p {
+            padding: 10px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .copyright ul {
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+        }
+
+        .copyright a,
+        li,
+        p {
+            font-size: 12px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media screen and (max-width :940px) {
+            .big_banner {
+                top: -20px;
+            }
+
+            .minibox {
+                height: 390px;
+                width: 280px;
+            }
+
+            .minibox h1 {
+                font-size: 16px;
+            }
+
+            .minibox img {
+                height: 90px;
+                width: 140px
+            }
+
+            .minibox p {
+                font-size: 8px;
+            }
+
+            .minibox_a {
+                font-size: 10px;
+            }
+
+            #rowbox {
+                margin: -45px 0 0 0;
+            }
+
+            #register {
+                margin: 0;
+            }
+
+            .rowbox_row img {
+                height: 130px;
+                width: 110px;
+            }
+        }
+
+        @media screen and (max-width :860px) {
+            header .nav {
+                gap: 20px;
+            }
+
+            .box7 a {
+                font-size: 12px;
+            }
+
+            .big_banner {
+                top: 0px;
+            }
+
+            .minibox {
+                height: 340px;
+                width: 240px;
+            }
+
+            .minibox h1 {
+                font-size: 14px;
+            }
+
+            .minibox img {
+                height: 70px;
+                width: 120px
+            }
+
+            .link1 ul {
+                font-size: 20px;
+                width: 175px;
+            }
+
+            .link2 ul {
+                width: 175px;
+            }
+
+            .link1 ul li {
+                font-size: 10px;
+            }
+
+            .link2 ul li {
+                font-size: 10px;
+            }
+
+            li {
+                font-size: 12px;
+            }
+
+            .rowbox_row img {
+                height: 110px;
+                width: 90px;
+            }
+
+            .rowbox_row h1 {
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (max-width :740px) {
+            .box12 span {
+                font-size: 8px;
+            }
+
+            .box12 {
+                width: 160px;
+            }
+
+            .box11 img {
+                height: 50px;
+                width: 100px
+            }
+
+            .box13 {
+                width: 255px;
+            }
+
+            .box13 input {
+                font-size: 10px;
+                padding: 10px;
+            }
+
+            .box13 i {
+                font-size: 12px;
+            }
+
+            .box13 select {
+                height: 30px;
+                width: 30px;
+            }
+
+            .box15 {
+                font-size: 12px;
+            }
+
+            .box14 {
+                font-size: 12px;
+            }
+            .box14 img {
+                height: 20px;
+                width: 20px;
+            }
+            .box16 {
+                font-size: 12px;
+            }
+            header .nav2 {
+                gap: 10px;
+                font-size: 10px;
+            }
+            .box12 span>p{
+                font-size: 10px;
+            }
+            .box7 a {
+                font-size: 9px;
+            }
+            .rowbox_row {
+                margin: 50px 15px 15px 15px
+            }
+            li {
+                font-size: 10px;
+            }
+            
+            .minibox {
+                height: 300px;
+                width: 200px;
+            }
+
+            .minibox h1 {
+                font-size: 12px;
+            }
+             .link1 ul {
+                font-size: 20px;
+                width: 125px;
+            }
+            .rowrow{
+                overflow: scroll;
+            }
+            #multibox{
+                margin: -100px 0 0 0;
+            }
+            .link2 ul {
+                width: 125px;
+            }
+            .minibox img {
+                height: 50px;
+                width: 100px
+            }
+        }
+        @media screen and (max-width :620px) {
+            .big_banner{
+                height:250px;
+            }
+            #multibox{
+                top: 0;
+                height: 1000px;
+            }
+            header .nav{
+                gap: 10px;
+            }
+            .rowbox_row h1{
+                font-size: 18px;
+            }
+            .rowbox_row{
+                height: 140px;
+            }
+            .rowbox_row img{
+                height: 70px;
+                width: 90px;
+            }
+            li{
+                font-size: 8px;
+            }
+            .link1 ul {font-size: 8px;
+                width: 100px;
+            }
+            .link2 ul {font-size: 8px;
+                width: 100px;
+            }
+        }
+        
+        @media screen and (max-width :490px){
+            .box11 img{
+                height: 40px;
+                width: 80px;
+            }
+            .box12 p{
+                font-size: 8px;
+            }
+.box12 span{
+    font-size: 6px;
+}
+            .box13 select{
+                font-size: 10px;
+                height: 20px;width: 20px;
+            }
+            .box13 i {
+                padding: 8px 10px 10px 8px;
+                font-size: 8px;
+            }
+            .box13 input{
+                padding: 6px;
+            }
+            .box14 img{
+                height: 15px;
+                width: 15px;
+            }
+            .box14{
+                font-size: 10px;
+            }
+            .box15{
+                font-size: 8px;
+            }
+            .box16{
+                font-size: 10px;
+            }
+            header .nav2{
+                font-size: 8px;
+            }
+            .box7 a{
+                font-size: 7px;
+            }
+            .box7 img{
+                height: 20px;
+                width: 20px;
+            }
+            .nav2 .minilink{
+                gap: 5px;
+            }
+            .box1{
+                font-size: 9px;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+
+            <div class="box11"><img src="../amazone/amz_images/amazone_logo.png" alt=""></div>
+            <div class="box12">
+                <div class="i">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>Delivering to Delhi 110001 <p>Update Location</p>
+            </div>
+
+            <div class="box13">
+                <select id="All">
+                    <option value="">All Categories</option>
+                    <option value="">Alexa Skills</option>
+                    <option value="">Amazone Dance</option>
+                    <option value="">Amazone music</option>
+                    <option value="">Apps and games</option>
+                    <option value="">beauty</option>
+                    <option value="">clothes</option>
+                    <option value="">Alexa Skills</option>
+                    <option value="">Amazone Dance</option>
+                    <option value="">Amazone music</option>
+                    <option value="">Apps and games</option>
+                    <option value="">beauty</option>
+                    <option value="">clothes</option>
+                </select>
+                <input type="text" name="" id="" placeholder="Search Amazone.in">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="box14">
+                <img src="../amazone/amz_images/flag.png" alt="">
+                <span>EN</span>
+            </div>
+
+
+            <div class="box15">Hello, sign in <span>Account & Lists</span> </div>
+            <div class="box16">Returns <span>& Orders</span></div>
+            <div class="box17"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+        <div class="nav2">
+            <div class="minilink">
+                <div class="box1"><span class="material-symbols-outlined">
+                        III
+                    </span>All</div>
+                <div class="box2">Amazone miniTV</div>
+                <div class="box3">Sell</div>
+                <div class="box4">Best Sellers</div>
+                <div class="box5">Today's Deals</div>
+                <div class="box6">Mobile's</div>
+            </div>
+            <div class="applink">
+                <div class="box7"> <a href="">
+                        <img src="../amazone/amz_images/shopping_removebg-preview.png" alt="">Shopping Made easy |
+                        Download the app</div>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section id="banner">
+        <img class="big_banner" src="../amazone/amz_images/big_banner.jpg" alt="">
+    </section>
+
+
+    <section id="multibox">
+        <div class="minibox">
+            <h1>Up to 60% off | Styles for Women</h1>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/model1.jpg" alt="mbb2">
+                <p>Kurtas & Kurties</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/model3.jpg" alt="mbb2">
+                <p>Tops & Tees</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/model4.jpg" alt="mbb2">
+                <p>Clothes and Dresses</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/model2.jpg" alt="mbb2">
+                <p>Sarees</p>
+            </div>
+            <a class="minibox_a" href="">See all deals</a>
+        </div>
+        <div class="minibox">
+            <h1>Up to 70% off | Refurbished Products</h1>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner3.jpg" alt="mbb2">
+                <p>Gadgets & Tech</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner5.jpg" alt="mbb2">
+                <p>Gadgets & Tech</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner5.jpg" alt="mbb2">
+                <p>Gadgets & Tech</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner3.jpg" alt="mbb2">
+                <p>Gadgets & Tech</p>
+            </div>
+            <a class="minibox_a" href="">See all deals</a>
+        </div>
+        <div class="minibox">
+            <h1>Starting $9 | Bestselling Products </h1>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product1.jpg" alt="mbb2">
+                <p>Headphones</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product6.jpg" alt="mbb2">
+                <p>Smart Watch</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product6.jpg" alt="mbb2">
+                <p>Smart Watch</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product2.jpg" alt="mbb2">
+                <p>Pods</p>
+            </div>
+            <a class="minibox_a" href="">See all deals</a>
+        </div>
+        <div class="minibox">
+            <h1>Up to 60% off | Deals On Amazone Brands & more</h1>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product3.jpg" alt="mbb2">
+                <p>Kurtas & Kurties</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product4.jpg" alt="mbb2">
+                <p>Tops & Tees</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product7.jpg" alt="mbb2">
+                <p>Clothes and Dresses</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/product5.jpg" alt="mbb2">
+                <p>Sarees</p>
+            </div>
+            <a class="minibox_a" href="">See all deals</a>
+        </div>
+        <div class="minibox">
+            <h1>Up to 65% off | Deals On Amazone Brands</h1>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner1.jpg" alt="mbb2">
+                <p>Kurtas & Kurties</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner5.jpg" alt="mbb2">
+                <p>Tops & Tees</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner4.jpg" alt="mbb2">
+                <p>Clothes and Dresses</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/banner1.jpg" alt="mbb2">
+                <p>Sarees</p>
+            </div>
+            <a class="minibox_a" href="">See all deals</a>
+        </div>
+        <div class="minibox">
+            <h1>Up to 60% off | Deals On wide range of TVs</h1>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/32_inch_tv.jpg" alt="mbb2">
+                <p>Kurtas & Kurties</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/32_inch_tv.jpg" alt="mbb2">
+                <p>Tops & Tees</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/32_inch_tv.jpg" alt="mbb2">
+                <p>Clothes and Dresses</p>
+            </div>
+            <div class="minibox_box">
+                <img src="../amazone/amz_images/32_inch_tv.jpg" alt="mbb2">
+                <p>Sarees</p>
+            </div>
+            <a class="minibox_a" href="">See all deals</a>
+        </div>
+    </section>
+
+
+    <section id="rowbox">
+        <div class="rowbox_row">
+            <h1>Blockbuster deals on every product <a href="" class="minibox_a">See all deals</a></h1>
+            <div class="rowrow">
+                <div class="rowbox_rowbox">
+                    <img src="../amazone/amz_images/product1.jpg" alt="">
+                </div>
+                <div class="rowbox_rowbox">
+                    <img src="../amazone/amz_images/product6.jpg" alt="">
+                </div>
+                <div class="rowbox_rowbox">
+                    <img src="../amazone/amz_images/product2.jpg" alt="">
+                </div>
+                <div class="rowbox_rowbox">
+                    <img src="../amazone/amz_images/product1.jpg" alt="">
+                </div>
+                <div class="rowbox_rowbox">
+                    <img src="../amazone/amz_images/product6.jpg" alt="">
+                </div>
+                <div class="rowbox_rowbox">
+                    <img src="../amazone/amz_images/product2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="register">
+        <div class="content">
+            <p>See personalized recommendations</p>
+            <button class="btn">sign in</button>
+            <h5>New Customer?<a href="" class="minibox_a">Start here.</a></h5>
+        </div>
+    </section>
+
+
+    <footer id="footer1">
+        <div class="para">
+            <a href="#">Back to Top</a>
+        </div>
+        <div class="para1">
+            <div class="para1_link">
+                <ul>
+                    <li>
+                        <h2>Get to Know Us</h2>
+                    </li>
+                    <li>
+                        <h4>About Us</h4>
+                    </li>
+                    <li>
+                        <h4>Careers</h4>
+                    </li>
+                    <li>
+                        <h4>Press Releases</h4>
+                    </li>
+                    <li>
+                        <h4>Amazone Science</h4>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Connect with Us</h2>
+                    </li>
+                    <li>
+                        <h4>Facebook</h4>
+                    </li>
+                    <li>
+                        <h4>Twitter</h4>
+                    </li>
+                    <li>
+                        <h4>Instagram</h4>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Make Money with Us</h2>
+                    </li>
+                    <li>
+                        <h4>Sell on Amazon</h4>
+                    </li>
+                    <li>
+                        <h4>Sell under Amazon Accelerator</h4>
+                    </li>
+                    <li>
+                        <h4>Protect and Build Your Brand</h4>
+                    </li>
+                    <li>
+                        <h4>Amazon Global Selling</h4>
+                    </li>
+                    <li>
+                        <h4>Become an Affiliate</h4>
+                    </li>
+                    <li>
+                        <h4>Fulfilment by Amazon</h4>
+                    </li>
+                    <li>
+                        <h4>Advertise Your Products</h4>
+                    </li>
+                    <li>
+                        <h4>Amazon Pay on Merchants</h4>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Let Us Help You</h2>
+                    </li>
+                    <li>
+                        <h4>COVID-19 and Amazon</h4>
+                    </li>
+                    <li>
+                        <h4>Your Account</h4>
+                    </li>
+                    <li>
+                        <h4>Returns Centre</h4>
+                    </li>
+                    <li>
+                        <h4>100% Purchase Protection</h4>
+                    </li>
+                    <li>
+                        <h4>Amazon App Download</h4>
+                    </li>
+                    <li>
+                        <h4>Help</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="para2">
+            <div class="para_content">
+                <img src="../amazone/amz_images/amazone_logo.png" alt="">
+                <select id="All">
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                    <option value="">French</option>
+                    <option value="">Russian</option>
+                    <option value="">chinies</option>
+                    <option value="">Japanese</option>
+                    <option value="">Spanish</option>
+                    <option value="">Alexa Skills</option>
+                    <option value="">Amazone Dance</option>
+                    <option value="">Amazone music</option>
+                    <option value="">Apps and games</option>
+                    <option value="">beauty</option>
+                    <option value="">clothes</option>
+                </select>
+            </div>
+            <div class="country">
+                <p>Australia</p>
+                <p>Brazil</p>
+                <p>Canada</p>
+                <p>China</p>
+                <p>France</p>
+                <p>Germany</p>
+                <p>Italy</p>
+                <p>Japan</p>
+                <p>Mexico</p>
+                <p>Netherlands</p>
+                <p>Poland</p>
+                <p>Singapore</p>
+                <p>Spain</p>
+                <p>Turkey</p>
+                <p>United Arab Emirates</p>
+                <p>United Kingdom</p>
+                <p>United States</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <footer id="footer2">
+        <div class="links">
+            <div class="link12">
+                <div class="link1">
+                    <ul>
+                        <li>AbeBooks</li>
+                        <li>Books, art</li>
+                        <li>& collectibles</li>
+                    </ul>
+                    <ul>
+                        <li>Amazon Web Services</li>
+                        <li>Scalable Cloud</li>
+                        <li>Computing Services</li>
+                    </ul>
+                    <ul>
+                        <li>Audible</li>
+                        <li>Download</li>
+                        <li>Audio Books</li>
+                    </ul>
+                    <ul>
+                        <li>IMDb</li>
+                        <li>Movies, TV</li>
+                        <li>& Celebrities</li>
+                    </ul>
+                </div>
+                <div class="link2">
+                    <ul>
+                        <li>Shopbop</li>
+                        <li>Designer</li>
+                        <li>Fashion Brands</li>
+                    </ul>
+                    <ul>
+                        <li>Amazon Business</li>
+                        <li>Everything For</li>
+                        <li>Your Business</li>
+                    </ul>
+                    <ul>
+                        <li>Prime Now</li>
+                        <li>2-Hour Delivery</li>
+                        <li>on Everyday Items</li>
+                    </ul>
+                    <ul>
+                        <li>Amazon Prime Music</li>
+                        <li>100 million songs, ad-free</li>
+                        <li>Over 15 million podcast episodes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <ul>
+                    <li><a href="">Conditions of Use & Sale</a></li>
+                    <li><a href="">Privacy Notice</a></li>
+                    <li><a href="">Interest-Based Ads</a></li>
+                </ul>
+                <p> &copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
